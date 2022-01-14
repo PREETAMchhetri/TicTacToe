@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+/* UTILITIES */
+th,
+td {
+  border: 1px solid gray;
+  padding: 12px;
+}
+.br-0 {
+  border-right: 0 !important;
+}
+.bl-0 {
+  border-left: 0 !important;
+}
+.bt-0 {
+  border-top: 0 !important;
+}
+.bb-0 {
+  border-bottom: 0 !important;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  color: rgb(239, 231, 251);
+  background: rgb(81, 28, 165);
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  font-weight: bolder;
+}
+
+.container {
+  height: 80vh;
+  width: 80vw;
+  border: 1px solid white;
+  margin: 30px auto;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  padding: 34px;
+}
+.game,
+.reading {
+  position: relative;
+  width: 50%;
+}
+.reading {
+  font-family: "Roboto", sans-serif;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+}
+
+.game-text {
+  height: 100%;
+  width: 100%;
+  font-size: 8vw;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  font-weight: 100;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.box {
+  border: 1px solid white;
+  cursor: pointer;
+  background: black;
+}
+
+.box:hover {
+  background: rgb(36, 36, 36);
+}
+
+.reading {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+.reading h3 {
+  font-size: 2rem;
+}
+.reading strong {
+  font-size: 1.7rem;
+}
+.reading table {
+  color: white;
+}
+
+.buttons {
+  margin-top: 12px;
+}
+.btn {
+  padding: 12px;
+  border-radius: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.line {
+  position: absolute;
+  width: 25vw;
+  height: 2.5px;
+  background-color: rgb(7, 137, 212);
+  /* transform: translate(8vh, 40vh) rotate(30deg); */
+  /* opacity: 0;
+  transition: opacity 0.5s; */
+  opacity: 0;
+  transition: opacity 0.5s;
+}
