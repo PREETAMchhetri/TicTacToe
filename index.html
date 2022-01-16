@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
 
   <body>
@@ -31,9 +32,10 @@
         </div>
 
         <div class="reading">
-          <h3>Game Start</h3>
-          <strong id="playerId">Player X turn</strong>
-          <span id="winningPlayer"></span>
+          <div class="heading">
+            <h3>Game Start</h3>
+            <strong id="playerId">Player X turn</strong>
+          </div>
           <div class="points">
             <table>
               <tr>
@@ -42,8 +44,8 @@
               </tr>
 
               <tr>
-                <td>0</td>
-                <td>0</td>
+                <td id="p1">0</td>
+                <td id="p2">0</td>
               </tr>
             </table>
           </div>
@@ -52,7 +54,18 @@
             <button type="button" class="btn btn-block" id="resetBoard">
               Reset board
             </button>
-            <button type="button" class="btn btn-block">Reset all</button>
+            <button type="button" class="btn btn-block" id="resetAll">
+              Reset all
+            </button>
+          </div>
+        </div>
+
+        <div class="victory">
+          <div>
+            <span id="winningPlayer"></span>
+          </div>
+          <div>
+            <img src="./excited.gif" alt="" class="victoryImg" />
           </div>
         </div>
       </div>

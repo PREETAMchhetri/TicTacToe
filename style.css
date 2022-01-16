@@ -57,7 +57,6 @@ td {
 .game,
 .reading {
   position: relative;
-  width: 50%;
 }
 .reading {
   font-family: "Roboto", sans-serif;
@@ -67,6 +66,7 @@ td {
   display: grid;
   grid-template-columns: repeat(3, 10vw);
   grid-template-rows: repeat(3, 10vw);
+  width: 50%;
 }
 
 .game-text {
@@ -95,6 +95,8 @@ td {
   display: flex;
   flex-direction: column;
   line-height: 2.5;
+  width: 50%;
+  /* flex-wrap: wrap; */
 }
 .reading h3 {
   font-size: 2rem;
@@ -122,9 +124,24 @@ td {
   width: 25vw;
   height: 2.5px;
   background-color: rgb(7, 137, 212);
-  /* transform: translate(8vh, 40vh) rotate(30deg); */
-  /* opacity: 0;
-  transition: opacity 0.5s; */
   opacity: 0;
   transition: opacity 0.5s;
+}
+#winningPlayer {
+  position: absolute;
+  left: 20vh;
+  padding-bottom: 25px;
+  /* transform: scale(3);
+  transition: transform 1s ease-in forwards; */
+  transform: scale(1);
+  transition: all 0.4s ease-in;
+}
+
+.victory {
+  position: absolute;
+  left: 30vh;
+  top: 25vh;
+}
+.victory img {
+  display: none;
 }

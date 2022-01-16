@@ -1,0 +1,113 @@
+@media (max-width: 763px) {
+  .game-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .game {
+    grid-template-columns: repeat(3, 8vh);
+    grid-template-rows: repeat(3, 8vh);
+    margin: 12px 0;
+    width: 100%;
+    justify-content: center;
+  }
+  .reading {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .heading {
+    margin-right: 4vh;
+    margin-left: 6vh;
+    margin-top: 2vh;
+  }
+  .reading h3 {
+    font-size: 1rem;
+  }
+  .reading strong {
+    font-size: 1rem;
+  }
+  .points {
+    margin-top: 2vh;
+    margin-right: 11vh;
+  }
+  .points th,
+  .points td {
+    border: 1px solid gray;
+    padding: 3px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .btn {
+    margin-top: 1rem;
+  }
+
+  .game-text {
+    font-size: 1.5rem;
+  }
+
+  #winningPlayer {
+    font-size: 12px;
+    padding: 0;
+    position: static;
+  }
+
+  .victoryImg {
+    height: 150px;
+    height: fit-content;
+    width: fit-content;
+    width: 150px;
+  }
+  .victory {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .victory div {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 488px) {
+  .reading {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+    justify-content: center;
+    align-items: center;
+  }
+  .heading,
+  .points,
+  .btn {
+    margin: 0;
+  }
+  .points {
+    display: flex;
+    justify-content: center;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 7px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  #winningPlayer {
+    font-size: 8px;
+  }
+}
